@@ -8,7 +8,7 @@ console.log(integers
       return second - first;
     }
   ).filter(
-    function(element, index, array ) {
+    function(element) {
       if (element < 20) {
       return element;
       }
@@ -21,6 +21,6 @@ console.log(integers
 
 ///
 // Single Line
-console.log(integers.sort(function(first, second) {return second - first;}).filter(function(element, index, array ) {if (element < 20) {return element;}}).reduce(function(previousValue, currentValue) {return previousValue + (currentValue*1.5 - 1);}, 0));
+console.log(integers.sort(function(first, second) {return second - first;}).filter(function(element) {if (element < 20) {return element;}}).reduce(function(previousValue, currentValue) {return previousValue + (currentValue*1.5 - 1);}, 0));
 
 
